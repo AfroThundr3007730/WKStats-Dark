@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name           WK Stats Dark
+@namespace      github.com/AfroThundr3007730
+@version        1.0.0
+@description    Dark theme for WaniKani Stats
+@author         AfroThundr
+@homepageURL    https://gist.github.com/AfroThundr3007730/f366ecad4b24f0ff6c73c817b14e1f29
+@updateURL      https://gist.githubusercontent.com/AfroThundr3007730/f366ecad4b24f0ff6c73c817b14e1f29/raw/master/wkstats-dark.user.css
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document domain("www.wkstats.com") {
+  body {
+    background-color: #112;
+    color: #aaa;
+  }
+  body[data-mode="apikey"], body[data-mode="loading"] {
+    background-color: #112;
+  }
+  a {
+    color: #99f;
+  }
+  #alerts {
+    background-image: linear-gradient(#332, #331);
+    border-color: #224;
+  }
+  #alerts .tab {
+    background-color: #222;
+    border-color: #111;
+  }
+  .oframe {
+    background-image: linear-gradient(-30deg, #181828, #282838);
+    border-color: #224;
+  }
+  #top_menu > li.selected, .pagemenu > li.selected {
+    background-color: rgba(204, 204, 204, .05);
+    border-color: rgba(204, 204, 204, .2);
+  }
+  .legend {
+    color: #333;
+  }
+  #estimates .noselect {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  #levelup .noselect {
+    background-color: rgba(204, 204, 204, .3);
+  }
+  #hyp_box {
+    border-color: rgba(204, 204, 204, .4);
+  }
+  #top_menu > li > a, .pagemenu > li > a, #hyp_days, #hyp_hours,
+  .legend .exclude {
+    color: #ccc;
+  }
+  #levelup .labels_y {
+    fill: #ccc;
+  }
+  .grid polyline {
+    stroke: #ccc;
+  }
+  .oframe i.minmax {
+    color: #aaa;
+  }
+  #pg_items .group.curlvl {
+    background-color: #331;
+    border-color: #333;
+  }
+  #pg_items.fast .item li {
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, .2) inset, 0 0 10px rgba(255, 255, 255, .1);
+  }
+  #pg_items.fast .appr {
+    background-image: linear-gradient(-30deg, #f28, #f9d);
+  }
+  #pg_items.fast .miss {
+    background-image: linear-gradient(-30deg, #ccc, #777);
+  }
+  #pg_charts table.missing th, #pg_charts tr:nth-child(1) th {
+    background-color: #442;
+  }
+  #pg_charts table {
+    background-color: #222;
+  }
+  #pg_charts table.stripe tr:nth-child(2n+1):not(:nth-child(1)) {
+    background-color: #333;
+  }
+}
