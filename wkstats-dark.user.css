@@ -1,12 +1,13 @@
 /* ==UserStyle==
-@name           WK Stats Dark
-@namespace      github.com/AfroThundr3007730
-@version        1.0.1
-@description    Dark theme for WaniKani Stats
-@author         AfroThundr
-@homepageURL    https://gist.github.com/AfroThundr3007730/f366ecad4b24f0ff6c73c817b14e1f29
-@updateURL      https://gist.githubusercontent.com/AfroThundr3007730/f366ecad4b24f0ff6c73c817b14e1f29/raw/master/wkstats-dark.user.css
-@license        CC-BY-SA-4.0
+@name         WK Stats Dark
+@version      1.0.2
+@description  Dark theme for WaniKani Stats
+@namespace    AfroThundr3007730
+@author       AfroThundr
+@homepageURL  https://github.com/AfroThundr3007730/WKStats-Dark
+@supportURL   https://github.com/AfroThundr3007730/WKStats-Dark/issues
+@updateURL    https://raw.githubusercontent.com/AfroThundr3007730/WKStats-Dark/master/wkstats-dark.user.css
+@license      GPL-3.0
 ==/UserStyle== */
 @-moz-document domain("www.wkstats.com") {
   :root {
@@ -65,8 +66,12 @@
   #hyp_box {
     border-color: rgba(204, 204, 204, .4);
   }
-  #top_menu > li > a, .pagemenu > li > a, #hyp_days, #hyp_hours,
-  .legend .exclude {
+  #top_menu > li > a, .pagemenu > li > a, .legend .exclude {
+    color: var(--gray-c);
+  }
+  #hyp_days, #hyp_hours {
+    background-color: var(--gray-1);
+    border-color: var(--gray-7);
     color: var(--gray-c);
   }
   #levelup .labels_y {
