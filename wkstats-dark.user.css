@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           WK Stats Dark
 @namespace      github.com/AfroThundr3007730
-@version        1.0.0
+@version        1.0.1
 @description    Dark theme for WaniKani Stats
 @author         AfroThundr
 @homepageURL    https://gist.github.com/AfroThundr3007730/f366ecad4b24f0ff6c73c817b14e1f29
@@ -9,34 +9,52 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("www.wkstats.com") {
+  :root {
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-7: #777;
+    --gray-a: #aaa;
+    --gray-c: #ccc;
+    --blue-1: #112;
+    --blue-2: #224;
+    --blue-3: #181828;
+    --blue-4: #282838;
+    --blue-5: #99f;
+    --brown-1: #331;
+    --brown-2: #332;
+    --brown-3: #442;
+    --purple-1: #f9d;
+    --purple-2: #f28;
+  }
   body {
-    background-color: #112;
-    color: #aaa;
+    background-color: var(--blue-1);
+    color: var(--gray-a);
   }
   body[data-mode="apikey"], body[data-mode="loading"] {
-    background-color: #112;
+    background-color: var(--blue-1);
   }
   a {
-    color: #99f;
+    color: var(--blue-5);
   }
   #alerts {
-    background-image: linear-gradient(#332, #331);
-    border-color: #224;
+    background-image: linear-gradient(var(--brown-2), var(--brown-1));
+    border-color: var(--blue-2);
   }
   #alerts .tab {
-    background-color: #222;
-    border-color: #111;
+    background-color: var(--gray-2);
+    border-color: var(--gray-1);
   }
   .oframe {
-    background-image: linear-gradient(-30deg, #181828, #282838);
-    border-color: #224;
+    background-image: linear-gradient(-30deg, var(--blue-3), var(--blue-4));
+    border-color: var(--blue-2);
   }
   #top_menu > li.selected, .pagemenu > li.selected {
     background-color: rgba(204, 204, 204, .05);
     border-color: rgba(204, 204, 204, .2);
   }
   .legend {
-    color: #333;
+    color: var(--gray-3);
   }
   #estimates .noselect {
     filter: invert(100%) hue-rotate(180deg);
@@ -49,37 +67,37 @@
   }
   #top_menu > li > a, .pagemenu > li > a, #hyp_days, #hyp_hours,
   .legend .exclude {
-    color: #ccc;
+    color: var(--gray-c);
   }
   #levelup .labels_y {
-    fill: #ccc;
+    fill: var(--gray-c);
   }
   .grid polyline {
-    stroke: #ccc;
+    stroke: var(--gray-c);
   }
   .oframe i.minmax {
-    color: #aaa;
+    color: var(--gray-a);
   }
   #pg_items .group.curlvl {
-    background-color: #331;
-    border-color: #333;
+    background-color: var(--brown-1);
+    border-color: var(--gray-3);
   }
   #pg_items.fast .item li {
     box-shadow: 0 -2px 0 rgba(0, 0, 0, .2) inset, 0 0 10px rgba(255, 255, 255, .1);
   }
   #pg_items.fast .appr {
-    background-image: linear-gradient(-30deg, #f28, #f9d);
+    background-image: linear-gradient(-30deg, var(--purple-2), var(--purple-1));
   }
   #pg_items.fast .miss {
-    background-image: linear-gradient(-30deg, #ccc, #777);
+    background-image: linear-gradient(-30deg, var(--gray-c), var(--gray-7));
   }
   #pg_charts table.missing th, #pg_charts tr:nth-child(1) th {
-    background-color: #442;
+    background-color: var(--brown-3);
   }
   #pg_charts table {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   #pg_charts table.stripe tr:nth-child(2n+1):not(:nth-child(1)) {
-    background-color: #333;
+    background-color: var(--gray-3);
   }
 }
