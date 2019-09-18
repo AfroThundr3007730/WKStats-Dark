@@ -74,8 +74,11 @@
     border-color: var(--gray-7);
     color: var(--gray-c);
   }
-  #levelup .labels_y {
+  #levelup .labels_y, .levels text, .times text.light, .times text.dark {
     fill: var(--gray-c);
+  }
+  #levelup .grid rect {
+    fill: var(--blue-4);
   }
   .grid polyline {
     stroke: var(--gray-c);
